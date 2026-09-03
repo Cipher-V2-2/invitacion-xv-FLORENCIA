@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XV Años de Florencia</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Definición reutilizable de la flor decorativa (se usa en todas las esquinas) -->
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+<defs>
+<symbol id="florEsquina" viewBox="0 0 220 220">
+  <defs>
+    <radialGradient id="petalA" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#fbe4ee"/>
+      <stop offset="100%" stop-color="#e8a9c4"/>
+    </radialGradient>
+    <radialGradient id="petalB" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#f6cfe0"/>
+      <stop offset="100%" stop-color="#d883a8"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a25a"/>
+      <stop offset="100%" stop-color="#8fa876"/>
+    </linearGradient>
+  </defs>
+
+  <g opacity="0.9">
+    <path d="M20 20 C60 30 90 60 100 110 C60 100 25 70 20 20 Z" fill="url(#leafGrad)"/>
+    <path d="M10 40 C50 55 70 90 75 140 C40 120 15 90 10 40 Z" fill="#a9c3a0" opacity="0.8"/>
+  </g>
+
+  <g transform="translate(55,55)">
+    <g>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalA)" transform="rotate(0)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalA)" transform="rotate(51)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalA)" transform="rotate(102)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalA)" transform="rotate(153)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalA)" transform="rotate(204)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalA)" transform="rotate(255)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalA)" transform="rotate(306)"/>
+    </g>
+    <circle cx="0" cy="0" r="10" fill="#c9678f"/>
+  </g>
+
+  <g transform="translate(110,95) scale(0.55)">
+    <g>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalB)" transform="rotate(0)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalB)" transform="rotate(60)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalB)" transform="rotate(120)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalB)" transform="rotate(180)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalB)" transform="rotate(240)"/>
+      <path d="M0,0 C-14,-8 -16,-32 0,-46 C16,-32 14,-8 0,0 Z" fill="url(#petalB)" transform="rotate(300)"/>
+    </g>
+    <circle cx="0" cy="0" r="10" fill="#a8496e"/>
+  </g>
+
+  <g transform="translate(30,110) scale(0.35)">
+    <ellipse cx="0" cy="-10" rx="12" ry="20" fill="#e8a9c4"/>
+    <path d="M0 10 L0 40" stroke="#8fa876" stroke-width="4"/>
+  </g>
+
+  <g stroke="#c9a25a" stroke-width="1" opacity="0.6" fill="none">
+    <path d="M5 5 Q40 15 45 55"/>
+    <path d="M15 5 Q55 20 65 65"/>
+  </g>
+</symbol>
+</defs>
+</svg>
+
+<!-- ===================== PORTADA ===================== -->
+<section class="invitacion">
+  <div class="marco">
+
+    <svg class="flor-grande flor-tl" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <svg class="flor-grande flor-tr" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+
+    <p class="pre-titulo">Mis</p>
+    <h1 class="titulo">XV Años</h1>
+
+    <div class="foto-wrap">
+      <svg class="flor-foto" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.95">
+          <circle cx="35" cy="205" r="13" fill="#e9b8ce"/>
+          <circle cx="20" cy="212" r="9" fill="#f1cfdd"/>
+          <circle cx="48" cy="215" r="9" fill="#f1cfdd"/>
+          <circle cx="35" cy="222" r="8" fill="#e29fbb"/>
+          <ellipse cx="60" cy="222" rx="10" ry="5" fill="#a9c3a0" transform="rotate(20 60 222)"/>
+          <circle cx="205" cy="205" r="13" fill="#e9b8ce"/>
+          <circle cx="220" cy="212" r="9" fill="#f1cfdd"/>
+          <circle cx="192" cy="215" r="9" fill="#f1cfdd"/>
+          <circle cx="205" cy="222" r="8" fill="#e29fbb"/>
+          <ellipse cx="180" cy="222" rx="10" ry="5" fill="#a9c3a0" transform="rotate(-20 180 222)"/>
+        </g>
+      </svg>
+      <div class="foto-container">
+        <img src="foto-cumpleañera.jpg" alt="Foto de la cumpleañera" class="foto">
+      </div>
+    </div>
+
+    <p class="nombre">Florencia</p>
+
+    <!-- FRASE confirmada por la clienta -->
+    <p class="frase">Hay recuerdos, personas y momentos como este, que voy a guardar siempre en mi corazón. Porque eres parte de mi vida quisiera que compartas conmigo la alegría de celebrar mis 15 años ¡¡¡</p>
+  </div>
+</section>
+
+<!-- ===================== CUENTA REGRESIVA ===================== -->
+<section class="seccion-full">
+  <div class="tarjeta-seccion">
+    <svg class="flor-grande flor-tl-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <svg class="flor-grande flor-tr-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <p class="pre-frase">Una noche soñada está por comenzar…</p>
+    <p class="cursiva-chica">Faltan</p>
+    <div class="cuenta-regresiva" id="cuentaRegresiva">
+      <div class="unidad"><span id="cr-dias">00</span><small>Días</small></div>
+      <div class="unidad"><span id="cr-horas">00</span><small>Horas</small></div>
+      <div class="unidad"><span id="cr-min">00</span><small>Minutos</small></div>
+      <div class="unidad"><span id="cr-seg">00</span><small>Segundos</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FECHA, HORA Y LUGAR ===================== -->
+<section class="seccion-full">
+  <div class="tarjeta-seccion">
+    <svg class="flor-grande flor-tl-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <svg class="flor-grande flor-tr-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+
+    <h3 class="titulo-seccion">Fecha y Hora</h3>
+    <p class="valor-seccion-grande">Sábado 26 de Setiembre</p>
+    <p class="valor-seccion">21:00 hs — Comienza</p>
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=XV+A%C3%B1os+de+Florencia&dates=20260926T210000/20260927T030000&location=-33.275426,-58.009481&details=%C2%A1Te+esperamos+a+festejar!" target="_blank" class="boton-mapa">📅 agendar</a>
+
+    <div class="separador"><span>✿</span></div>
+
+    <h3 class="titulo-seccion">Lugar</h3>
+    <p class="valor-seccion-grande">Quincho Don Alfredo</p>
+    <a href="https://www.google.com/maps?q=-33.275426,-58.009481" target="_blank" class="boton-mapa">📍 mapa aquí</a>
+  </div>
+</section>
+
+<!-- ===================== CÓDIGO DE VESTIMENTA ===================== -->
+<section class="seccion-full">
+  <div class="tarjeta-seccion">
+    <svg class="flor-grande flor-tl-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <svg class="flor-grande flor-tr-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <p class="iconos-vestimenta">👗 🤵</p>
+    <h3 class="titulo-seccion">Código de Vestimenta</h3>
+    <p class="valor-seccion-grande">Semi formal</p>
+    <!-- Nota opcional: cambiar/quitar cuando la clienta confirme si quiere pedir evitar algún color -->
+    <p class="nota-vestimenta">Se agradece evitar el color rosa, para que sea el color distintivo de la cumpleañera.</p>
+  </div>
+</section>
+
+<!-- ===================== REGALO ===================== -->
+<section class="seccion-full">
+  <div class="tarjeta-seccion">
+    <svg class="flor-grande flor-tl-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <svg class="flor-grande flor-tr-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <p class="icono-regalo">🎁</p>
+    <p class="texto-regalo">
+      Mi mejor regalo es tu presencia y que me acompañes en este día tan especial,
+      pero si querés tener un detalle, acá te dejo mis datos:
+    </p>
+    <!-- DATOS DE CUENTA confirmados por la clienta -->
+    <p class="datos-cuenta">Cuenta Prex<br>20334082</p>
+  </div>
+</section>
+
+<!-- ===================== FORMULARIO ===================== -->
+<section id="rsvp" class="formulario-section">
+  <div class="formulario-card">
+    <svg class="flor-grande flor-tl-form" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <svg class="flor-grande flor-tr-form" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <h2>Confirmar presencia</h2>
+    <p class="subtitulo">Por favor confirmá tu asistencia antes del viernes 18/09</p>
+
+    <form id="rsvpForm">
+      <label for="nombre">Nombre y apellido</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+
+      <label>¿Podrás asistir?</label>
+      <div class="opciones">
+        <label class="opcion"><input type="radio" name="asistencia" value="Si" required> Sí</label>
+        <label class="opcion"><input type="radio" name="asistencia" value="No" required> No</label>
+      </div>
+
+      <label for="adultos">Cantidad adultos</label>
+      <input type="number" id="adultos" name="adultos" min="0" value="1" required>
+
+      <label for="ninos">Cantidad niños</label>
+      <input type="number" id="ninos" name="ninos" min="0" value="0" required>
+
+      <label for="adolescentes">Cantidad adolescentes</label>
+      <input type="number" id="adolescentes" name="adolescentes" min="0" value="0" required>
+
+      <label>¿Tenés alguna restricción alimentaria?</label>
+      <div class="opciones">
+        <label class="opcion"><input type="radio" name="restriccion" value="Ninguna" required> Ninguna</label>
+        <label class="opcion"><input type="radio" name="restriccion" value="Celiaco" required> Celíaco</label>
+        <label class="opcion"><input type="radio" name="restriccion" value="Diabetico" required> Diabético</label>
+      </div>
+
+      <button type="submit" class="boton-enviar">Enviar</button>
+      <p id="mensajeEstado" class="mensaje-estado"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== RETOS DE LA NOCHE ===================== -->
+<section class="seccion-full">
+  <div class="tarjeta-seccion">
+    <svg class="flor-grande flor-tl-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <svg class="flor-grande flor-tr-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <p class="icono-regalo">🎉</p>
+    <h3 class="titulo-seccion">Retos de la Noche</h3>
+    <p class="texto-regalo">
+      Durante la fiesta van a aparecer estos desafíos. ¡Sacate la foto y subila a nuestro álbum!
+    </p>
+    <!-- RETOS: son de ejemplo, cambiar por los que confirme la clienta -->
+    <ul class="lista-retos">
+      <li>📸 Sacate una selfie con la cumpleañera</li>
+      <li>💃 Bailá una canción con alguien que no conocías</li>
+      <li>🥂 Brindá con 3 personas distintas</li>
+      <li>😂 Sacate una foto haciendo la cara más graciosa</li>
+      <li>👯 Reunite con más de 5 invitados para una foto grupal</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== ÁLBUM DE FOTOS ===================== -->
+<section class="seccion-full">
+  <div class="tarjeta-seccion">
+    <svg class="flor-grande flor-tl-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <svg class="flor-grande flor-tr-chica" viewBox="0 0 220 220"><use href="#florEsquina"></use></svg>
+    <p class="icono-regalo">📷</p>
+    <h3 class="titulo-seccion">Compartí tus Fotos</h3>
+    <p class="texto-regalo">
+      Todas las fotos y videos que saques durante la noche se guardan acá, ¡para que
+      no se pierda ningún momento!
+    </p>
+    <!-- LINK: reemplazar por el link real de la carpeta de Google Drive (ver instrucciones.md) -->
+    <a href="PEGAR_ACA_EL_LINK_DE_LA_CARPETA_DE_DRIVE" target="_blank" class="boton-mapa">📁 Subir mis fotos</a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
